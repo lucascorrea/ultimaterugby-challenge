@@ -10,13 +10,16 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UISlider *mainTimerSlider;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.mainTimerSlider setThumbImage:[UIImage imageNamed:@"MainTimerSlider"] forState:UIControlStateNormal];
 }
 
 

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A020E7A31F7FEC0A0012A86F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7A21F7FEC0A0012A86F /* AppDelegate.m */; };
-		A020E7A61F7FEC0A0012A86F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7A51F7FEC0A0012A86F /* ViewController.m */; };
-		A020E7A91F7FEC0A0012A86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7A71F7FEC0A0012A86F /* Main.storyboard */; };
-		A020E7AB1F7FEC0A0012A86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A020E7AA1F7FEC0A0012A86F /* Assets.xcassets */; };
-		A020E7AE1F7FEC0A0012A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7AC1F7FEC0A0012A86F /* LaunchScreen.storyboard */; };
 		A020E7B11F7FEC0A0012A86F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7B01F7FEC0A0012A86F /* main.m */; };
 		A020E7BB1F7FEC0A0012A86F /* UltimaterugbyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */; };
+		A020E7D61F7FEC740012A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */; };
+		A020E7D71F7FEC740012A86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C81F7FEC720012A86F /* Main.storyboard */; };
+		A020E7D81F7FEC740012A86F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7CB1F7FEC720012A86F /* ViewController.m */; };
+		A020E7D91F7FEC740012A86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A020E7D01F7FEC730012A86F /* Assets.xcassets */; };
+		A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7D31F7FEC730012A86F /* AppDelegate.m */; };
+		A0FBE4651F800D170036FE01 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0FBE4641F800D160036FE01 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +29,19 @@
 
 /* Begin PBXFileReference section */
 		A020E79E1F7FEC0A0012A86F /* Ultimaterugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultimaterugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A020E7A11F7FEC0A0012A86F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A020E7A21F7FEC0A0012A86F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A020E7A41F7FEC0A0012A86F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A020E7A51F7FEC0A0012A86F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A020E7A81F7FEC0A0012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A020E7AA1F7FEC0A0012A86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A020E7AD1F7FEC0A0012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A020E7AF1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A020E7B01F7FEC0A0012A86F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A020E7B61F7FEC0A0012A86F /* UltimaterugbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimaterugbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UltimaterugbyTests.m; sourceTree = "<group>"; };
 		A020E7BC1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A020E7C71F7FEC720012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A020E7C91F7FEC720012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A020E7CB1F7FEC720012A86F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A020E7CC1F7FEC720012A86F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A020E7D01F7FEC730012A86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A020E7D21F7FEC730012A86F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A020E7D31F7FEC730012A86F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0FBE4641F800D160036FE01 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +83,14 @@
 		A020E7A01F7FEC0A0012A86F /* Ultimaterugby */ = {
 			isa = PBXGroup;
 			children = (
-				A020E7A11F7FEC0A0012A86F /* AppDelegate.h */,
-				A020E7A21F7FEC0A0012A86F /* AppDelegate.m */,
-				A020E7A41F7FEC0A0012A86F /* ViewController.h */,
-				A020E7A51F7FEC0A0012A86F /* ViewController.m */,
-				A020E7A71F7FEC0A0012A86F /* Main.storyboard */,
-				A020E7AA1F7FEC0A0012A86F /* Assets.xcassets */,
-				A020E7AC1F7FEC0A0012A86F /* LaunchScreen.storyboard */,
+				A020E7C51F7FEC720012A86F /* Storyboards */,
+				A020E7D11F7FEC730012A86F /* Main */,
+				A020E7CD1F7FEC730012A86F /* Helpers */,
+				A020E7CF1F7FEC730012A86F /* Resources */,
+				A020E7D41F7FEC740012A86F /* Services */,
+				A020E7CA1F7FEC720012A86F /* Views */,
+				A020E7CE1F7FEC730012A86F /* Models */,
+				A020E7D51F7FEC740012A86F /* ViewModels */,
 				A020E7AF1F7FEC0A0012A86F /* Info.plist */,
 				A020E7B01F7FEC0A0012A86F /* main.m */,
 			);
@@ -101,6 +104,78 @@
 				A020E7BC1F7FEC0A0012A86F /* Info.plist */,
 			);
 			path = UltimaterugbyTests;
+			sourceTree = "<group>";
+		};
+		A020E7C51F7FEC720012A86F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */,
+				A020E7C81F7FEC720012A86F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A020E7CA1F7FEC720012A86F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A020E7CB1F7FEC720012A86F /* ViewController.m */,
+				A020E7CC1F7FEC720012A86F /* ViewController.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A020E7CD1F7FEC730012A86F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A020E7CE1F7FEC730012A86F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A020E7CF1F7FEC730012A86F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0FBE4631F800D160036FE01 /* Fonts */,
+				A020E7D01F7FEC730012A86F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A020E7D11F7FEC730012A86F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A020E7D21F7FEC730012A86F /* AppDelegate.h */,
+				A020E7D31F7FEC730012A86F /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A020E7D41F7FEC740012A86F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A020E7D51F7FEC740012A86F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A0FBE4631F800D160036FE01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A0FBE4641F800D160036FE01 /* digital-7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A020E7AE1F7FEC0A0012A86F /* LaunchScreen.storyboard in Resources */,
-				A020E7AB1F7FEC0A0012A86F /* Assets.xcassets in Resources */,
-				A020E7A91F7FEC0A0012A86F /* Main.storyboard in Resources */,
+				A020E7D61F7FEC740012A86F /* LaunchScreen.storyboard in Resources */,
+				A020E7D91F7FEC740012A86F /* Assets.xcassets in Resources */,
+				A020E7D71F7FEC740012A86F /* Main.storyboard in Resources */,
+				A0FBE4651F800D170036FE01 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,9 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A020E7A61F7FEC0A0012A86F /* ViewController.m in Sources */,
+				A020E7D81F7FEC740012A86F /* ViewController.m in Sources */,
 				A020E7B11F7FEC0A0012A86F /* main.m in Sources */,
-				A020E7A31F7FEC0A0012A86F /* AppDelegate.m in Sources */,
+				A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,20 +306,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A020E7A71F7FEC0A0012A86F /* Main.storyboard */ = {
+		A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A020E7A81F7FEC0A0012A86F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A020E7AC1F7FEC0A0012A86F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A020E7AD1F7FEC0A0012A86F /* Base */,
+				A020E7C71F7FEC720012A86F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A020E7C81F7FEC720012A86F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A020E7C91F7FEC720012A86F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = Ultimaterugby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.siriuscode.Ultimaterugby;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CG326ELR9;
 				INFOPLIST_FILE = Ultimaterugby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ie.siriuscode.Ultimaterugby;
 				PRODUCT_NAME = "$(TARGET_NAME)";

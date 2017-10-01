@@ -86,11 +86,11 @@
 				A020E7C51F7FEC720012A86F /* Storyboards */,
 				A020E7D11F7FEC730012A86F /* Main */,
 				A020E7CD1F7FEC730012A86F /* Helpers */,
-				A020E7CF1F7FEC730012A86F /* Resources */,
 				A020E7D41F7FEC740012A86F /* Services */,
 				A020E7CA1F7FEC720012A86F /* Views */,
 				A020E7CE1F7FEC730012A86F /* Models */,
 				A020E7D51F7FEC740012A86F /* ViewModels */,
+				A020E7CF1F7FEC730012A86F /* Resources */,
 				A020E7AF1F7FEC0A0012A86F /* Info.plist */,
 				A020E7B01F7FEC0A0012A86F /* main.m */,
 			);
@@ -118,8 +118,8 @@
 		A020E7CA1F7FEC720012A86F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A020E7CB1F7FEC720012A86F /* ViewController.m */,
 				A020E7CC1F7FEC720012A86F /* ViewController.h */,
+				A020E7CB1F7FEC720012A86F /* ViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";

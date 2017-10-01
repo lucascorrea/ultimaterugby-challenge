@@ -148,7 +148,7 @@
                                     <constraint firstItem="s99-dC-f0B" firstAttribute="top" secondItem="ei3-5i-uWh" secondAttribute="top" constant="9" id="te0-f0-BAE"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wnn-B4-9JG">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wnn-B4-9JG">
                                 <rect key="frame" x="0.0" y="251" width="375" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="112" id="wwr-jM-sgz"/>
@@ -170,7 +170,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gJs-3l-nRt"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YellowCardCell" id="gyT-bX-0fl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YellowCardCell" id="gyT-bX-0fl">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyT-bX-0fl" id="clx-r1-vx9">
@@ -195,6 +195,9 @@
                                 </constraints>
                                 <state key="normal" image="PlayButton"/>
                                 <state key="selected" image="PauseButton"/>
+                                <connections>
+                                    <action selector="startOrPauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxR-Mr-1n1"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ0-RR-Xuf">
                                 <rect key="frame" x="0.0" y="619" width="375" height="49"/>
@@ -267,6 +270,18 @@
                                     <constraint firstAttribute="trailing" secondItem="MzG-FW-FQ5" secondAttribute="trailing" id="mMx-XT-yKQ"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-BV-6qP">
+                                <rect key="frame" x="243" y="354" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NDH-i2-IZF"/>
+                                    <constraint firstAttribute="height" constant="40" id="qhE-KJ-7Ix"/>
+                                </constraints>
+                                <state key="normal" image="HTButton"/>
+                                <state key="selected" image="PauseButton"/>
+                                <connections>
+                                    <action selector="htAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cc-Ra-Gee"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -285,6 +300,7 @@
                             <constraint firstItem="ei3-5i-uWh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Iek-qe-wk6"/>
                             <constraint firstItem="BBi-Tf-8sI" firstAttribute="height" secondItem="LP4-En-aJK" secondAttribute="height" id="JFQ-Y7-Diw"/>
                             <constraint firstItem="bXt-hI-h3V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kx1-hl-PHJ"/>
+                            <constraint firstItem="Fzp-BV-6qP" firstAttribute="leading" secondItem="AKE-q0-gpU" secondAttribute="trailing" constant="29.5" id="P1W-4P-Em4"/>
                             <constraint firstItem="bXt-hI-h3V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PWj-9N-ZRw"/>
                             <constraint firstItem="RJ0-RR-Xuf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="1" id="SRp-mE-l3M"/>
                             <constraint firstItem="Wnn-B4-9JG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="STJ-3s-C4U"/>
@@ -295,6 +311,7 @@
                             <constraint firstItem="LP4-En-aJK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bZ7-yr-jnw"/>
                             <constraint firstItem="BBi-Tf-8sI" firstAttribute="width" secondItem="LP4-En-aJK" secondAttribute="width" id="brA-UB-yhu"/>
                             <constraint firstItem="BBi-Tf-8sI" firstAttribute="top" secondItem="AKE-q0-gpU" secondAttribute="bottom" constant="-13" id="gTO-MR-pVg"/>
+                            <constraint firstItem="Fzp-BV-6qP" firstAttribute="top" secondItem="AKE-q0-gpU" secondAttribute="top" constant="4" id="gup-Sw-Kae"/>
                             <constraint firstItem="Wnn-B4-9JG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgR-WV-JtO"/>
                             <constraint firstItem="AKE-q0-gpU" firstAttribute="top" secondItem="Wnn-B4-9JG" secondAttribute="bottom" constant="-13" id="ksl-MC-hgJ"/>
                             <constraint firstItem="ei3-5i-uWh" firstAttribute="top" secondItem="LKc-tu-hXy" secondAttribute="bottom" constant="2" id="nPP-WL-jve"/>
@@ -305,7 +322,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ultimate Rugby" id="lp4-gt-uC4"/>
                     <connections>
+                        <outlet property="chronometerLabel" destination="Wnn-B4-9JG" id="fQQ-Jd-pc4"/>
+                        <outlet property="conversionButton" destination="IVr-Cg-Yr6" id="SPY-XF-Lhc"/>
+                        <outlet property="htButton" destination="Fzp-BV-6qP" id="lZO-kr-XuD"/>
+                        <outlet property="kickButton" destination="dQV-t1-T0k" id="MRr-qR-QaW"/>
                         <outlet property="mainTimerSlider" destination="s99-dC-f0B" id="frF-lm-uBr"/>
+                        <outlet property="redButton" destination="Ils-4U-XmG" id="dbb-oD-2Pl"/>
+                        <outlet property="startOrPauseButton" destination="AKE-q0-gpU" id="Lyc-eA-Mgk"/>
+                        <outlet property="timerLabel" destination="8N6-oN-3Ey" id="YKa-J7-HxF"/>
+                        <outlet property="tryButton" destination="ccI-00-1uT" id="m0u-uS-Lrq"/>
+                        <outlet property="yellowButton" destination="u3F-5c-6lD" id="rmo-0n-wAd"/>
+                        <outlet property="yellowTableView" destination="LP4-En-aJK" id="jqo-Gm-TfM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -334,6 +361,7 @@
     <resources>
         <image name="ConversionButtonDisabled" width="25" height="26"/>
         <image name="ConversionButtonEnabled" width="25" height="26"/>
+        <image name="HTButton" width="78" height="76"/>
         <image name="KickButtonDisabled" width="25" height="26"/>
         <image name="KickButtonEnabled" width="25" height="26"/>
         <image name="PauseButton" width="61" height="61"/>

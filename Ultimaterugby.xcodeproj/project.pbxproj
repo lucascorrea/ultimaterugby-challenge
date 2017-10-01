@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A000DC891F80FB39003FFC82 /* PlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC881F80FB39003FFC82 /* PlayerViewModel.m */; };
+		A000DC8C1F80FB47003FFC82 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC8B1F80FB47003FFC82 /* Player.m */; };
 		A020E7B11F7FEC0A0012A86F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7B01F7FEC0A0012A86F /* main.m */; };
 		A020E7BB1F7FEC0A0012A86F /* UltimaterugbyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */; };
 		A020E7D61F7FEC740012A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */; };
@@ -14,6 +16,7 @@
 		A020E7D81F7FEC740012A86F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7CB1F7FEC720012A86F /* ViewController.m */; };
 		A020E7D91F7FEC740012A86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A020E7D01F7FEC730012A86F /* Assets.xcassets */; };
 		A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7D31F7FEC730012A86F /* AppDelegate.m */; };
+		A03287941F80F9690061FEF4 /* PlayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03287931F80F9690061FEF4 /* PlayerTableViewController.m */; };
 		A0FBE4651F800D170036FE01 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0FBE4641F800D160036FE01 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A000DC871F80FB39003FFC82 /* PlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewModel.h; sourceTree = "<group>"; };
+		A000DC881F80FB39003FFC82 /* PlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewModel.m; sourceTree = "<group>"; };
+		A000DC8A1F80FB47003FFC82 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		A000DC8B1F80FB47003FFC82 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		A020E79E1F7FEC0A0012A86F /* Ultimaterugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultimaterugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A020E7AF1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A020E7B01F7FEC0A0012A86F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +48,8 @@
 		A020E7D01F7FEC730012A86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A020E7D21F7FEC730012A86F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A020E7D31F7FEC730012A86F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A03287921F80F9690061FEF4 /* PlayerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerTableViewController.h; sourceTree = "<group>"; };
+		A03287931F80F9690061FEF4 /* PlayerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerTableViewController.m; sourceTree = "<group>"; };
 		A0FBE4641F800D160036FE01 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +129,8 @@
 			children = (
 				A020E7CC1F7FEC720012A86F /* ViewController.h */,
 				A020E7CB1F7FEC720012A86F /* ViewController.m */,
+				A03287921F80F9690061FEF4 /* PlayerTableViewController.h */,
+				A03287931F80F9690061FEF4 /* PlayerTableViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +145,8 @@
 		A020E7CE1F7FEC730012A86F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A000DC8A1F80FB47003FFC82 /* Player.h */,
+				A000DC8B1F80FB47003FFC82 /* Player.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +179,8 @@
 		A020E7D51F7FEC740012A86F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A000DC871F80FB39003FFC82 /* PlayerViewModel.h */,
+				A000DC881F80FB39003FFC82 /* PlayerViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,6 +298,9 @@
 			files = (
 				A020E7D81F7FEC740012A86F /* ViewController.m in Sources */,
 				A020E7B11F7FEC0A0012A86F /* main.m in Sources */,
+				A03287941F80F9690061FEF4 /* PlayerTableViewController.m in Sources */,
+				A000DC891F80FB39003FFC82 /* PlayerViewModel.m in Sources */,
+				A000DC8C1F80FB47003FFC82 /* Player.m in Sources */,
 				A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

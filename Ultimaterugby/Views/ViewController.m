@@ -41,13 +41,17 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    self.startOrPauseButton.transform = CGAffineTransformMakeScale(0, 0);
-    [UIView animateWithDuration:1 delay:.5 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.startOrPauseButton.transform = CGAffineTransformMakeScale(1, 1);
-        self.chronometerLabel.alpha = 1;
-    } completion:^(BOOL finished) {
-        
-    }];
+    if (self.view.tag != 999) {
+        self.startOrPauseButton.transform = CGAffineTransformMakeScale(0, 0);
+        [UIView animateWithDuration:1 delay:.5 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.startOrPauseButton.transform = CGAffineTransformMakeScale(1, 1);
+            self.chronometerLabel.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+    
+    self.view.tag = 999;
 }
 
 
@@ -82,6 +86,13 @@
 
 - (IBAction)htAction:(id)sender {
     
+}
+
+- (IBAction)yellowCardAction:(UIButton *)sender {
+    //If button enabled, do action
+    if (sender.selected) {
+        [self performSegueWithIdentifier:@"seguePlayers" sender:nil];
+    }
 }
 
 @end

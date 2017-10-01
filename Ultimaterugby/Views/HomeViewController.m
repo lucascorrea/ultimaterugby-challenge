@@ -1,14 +1,15 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  Ultimaterugby
 //
 //  Created by Lucas Correa on 30/09/2017.
 //  Copyright © 2017 SiriusCode. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
+#import "YellowCardCell.h"
 
-@interface ViewController ()
+@interface HomeViewController () <PlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UISlider *mainTimerSlider;
@@ -21,15 +22,16 @@
 @property (weak, nonatomic) IBOutlet UIButton *yellowButton;
 @property (weak, nonatomic) IBOutlet UIButton *conversionButton;
 @property (weak, nonatomic) IBOutlet UIButton *htButton;
-
+@property (strong, nonatomic) HomeViewModel *homeViewModel;
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.mainTimerSlider setThumbImage:[UIImage imageNamed:@"MainTimerSlider"] forState:UIControlStateNormal];
+    self.homeViewModel = [[HomeViewModel alloc] init];
 }
 
 
@@ -93,6 +95,61 @@
     if (sender.selected) {
         [self performSegueWithIdentifier:@"seguePlayers" sender:nil];
     }
+}
+
+#pragma mark
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.homeViewModel.yellowCardsArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"YellowCardCell";
+    YellowCardCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    Player *player = self.homeViewModel.yellowCardsArray[indexPath.row];
+    cell.playerLabel.text = player.name;
+    
+    return cell;
+}
+
+
+#pragma mark
+#pragma mark - Table view delegate
+
+// - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//     return 51;
+// }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark -
+#pragma mark - UIStoryboardSegue Methods
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"seguePlayers"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+         PlayerTableViewController *playerTableViewController = (PlayerTableViewController *)navigationController.viewControllers.firstObject;
+        playerTableViewController.delegate = self;
+    }
+}
+
+#pragma mark -
+#pragma mark - PlayerDelegate Methods
+
+- (void)playerDidSelectedPlayer:(Player *)player {
+    NSLog(@"%@", player);
+    [self.homeViewModel addYellowCardToPlayer:player];
+    self.yellowTableView.hidden = NO;
+    [self.yellowTableView reloadData];
 }
 
 @end

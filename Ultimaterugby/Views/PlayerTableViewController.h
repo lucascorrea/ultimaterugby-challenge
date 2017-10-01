@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "PlayerViewModel.h"
 
+@protocol PlayerDelegate <NSObject>
+
+- (void)playerDidSelectedPlayer:(Player *)player;
+
+@end
+
 @interface PlayerTableViewController : UITableViewController
+
+@property (strong, nonatomic) id<PlayerDelegate> delegate;
 
 @end

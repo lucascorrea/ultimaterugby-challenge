@@ -27,11 +27,24 @@
         [self.tableView reloadData];
     } failure:^(NSError *error) {
     }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma mark - Methods
+
+- (void)selectedPlayer {
+    if ([self.delegate respondsToSelector:@selector(playerDidSelectedPlayer:)]) {
+        Player *player = self.playerViewModel.playersArray[self.selectedIndexPath.row];
+        [self.delegate playerDidSelectedPlayer:player];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -
@@ -65,12 +78,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath   *)indexPath {
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    
     self.selectedIndexPath = indexPath;
+    
+    if (self.navigationItem.rightBarButtonItems.count == 0) {
+        UIBarButtonItem *doneBarButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(selectedPlayer)];
+        self.navigationItem.rightBarButtonItems = @[doneBarButton];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
     self.selectedIndexPath = nil;
 }
+
 
 @end

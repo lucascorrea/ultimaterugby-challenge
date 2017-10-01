@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
         <!--Ultimate Rugby-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,15 +171,73 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="gJs-3l-nRt"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YellowCardCell" id="gyT-bX-0fl">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="YellowCardCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="YellowCardCell" rowHeight="51" id="gyT-bX-0fl" customClass="YellowCardCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyT-bX-0fl" id="clx-r1-vx9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YellowCardEnabled" translatesAutoresizingMaskIntoConstraints="NO" id="Xh1-SC-b5l">
+                                                    <rect key="frame" x="8" y="3" width="30" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Dci-gv-25U"/>
+                                                        <constraint firstAttribute="width" constant="30" id="VWL-n1-VsU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-6q-fTq">
+                                                    <rect key="frame" x="41" y="8" width="57" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Jte-Xk-bz2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZa-un-UWC">
+                                                    <rect key="frame" x="41" y="23" width="57" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="NDe-lW-sRu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-Tk-9VV">
+                                                    <rect key="frame" x="111" y="15" width="252" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="60" id="YDD-uj-ptb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nHa-Tk-9VV" secondAttribute="bottom" constant="6.5" id="1tl-X3-A5v"/>
+                                                <constraint firstItem="nHa-Tk-9VV" firstAttribute="leading" secondItem="Ldb-6q-fTq" secondAttribute="trailing" constant="13" id="2SG-Cc-iPD"/>
+                                                <constraint firstItem="Xh1-SC-b5l" firstAttribute="top" secondItem="clx-r1-vx9" secondAttribute="top" constant="3" id="3g7-ph-04r"/>
+                                                <constraint firstItem="UZa-un-UWC" firstAttribute="top" secondItem="Ldb-6q-fTq" secondAttribute="bottom" constant="-6" id="8JO-Fr-gyq"/>
+                                                <constraint firstItem="Xh1-SC-b5l" firstAttribute="leading" secondItem="clx-r1-vx9" secondAttribute="leading" constant="8" id="8Ve-LP-27e"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nHa-Tk-9VV" secondAttribute="trailing" constant="4" id="9N6-zH-ASN"/>
+                                                <constraint firstAttribute="bottom" secondItem="Xh1-SC-b5l" secondAttribute="bottom" constant="3.5" id="Itm-Jb-KFF"/>
+                                                <constraint firstItem="Ldb-6q-fTq" firstAttribute="top" secondItem="clx-r1-vx9" secondAttribute="top" constant="8" id="UEc-o7-cde"/>
+                                                <constraint firstItem="Ldb-6q-fTq" firstAttribute="leading" secondItem="Xh1-SC-b5l" secondAttribute="trailing" constant="3" id="YUg-Kn-uJK"/>
+                                                <constraint firstItem="UZa-un-UWC" firstAttribute="leading" secondItem="Xh1-SC-b5l" secondAttribute="trailing" constant="3" id="Z7j-7D-LjZ"/>
+                                                <constraint firstItem="nHa-Tk-9VV" firstAttribute="top" secondItem="clx-r1-vx9" secondAttribute="topMargin" constant="7" id="mJo-qr-02W"/>
+                                                <constraint firstItem="nHa-Tk-9VV" firstAttribute="leading" secondItem="UZa-un-UWC" secondAttribute="trailing" constant="13" id="mw5-8U-J8k"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerLabel" destination="Ldb-6q-fTq" id="IP9-H7-R2W"/>
+                                            <outlet property="timerLabel" destination="nHa-Tk-9VV" id="HwE-fn-KYx"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tDn-aK-cF1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2ec-Mc-88b"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPd-P6-toN">
                                 <rect key="frame" x="0.0" y="374" width="375" height="1"/>
@@ -343,7 +402,7 @@
             </objects>
             <point key="canvasLocation" x="768.79999999999995" y="475.41229385307349"/>
         </scene>
-        <!--Players-->
+        <!--Select Player-->
         <scene sceneID="w5l-YL-TQf">
             <objects>
                 <tableViewController storyboardIdentifier="PlayerTableViewController" id="ZUj-AN-Nue" customClass="PlayerTableViewController" sceneMemberID="viewController">
@@ -375,7 +434,7 @@
                             <outlet property="delegate" destination="ZUj-AN-Nue" id="SPB-dr-ufd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Players" id="q9J-mZ-FNR">
+                    <navigationItem key="navigationItem" title="Select Player" id="q9J-mZ-FNR">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="0Tl-Wl-Cvv">
                             <connections>
                                 <action selector="closeAction:" destination="ZUj-AN-Nue" id="iWg-Jt-5DV"/>

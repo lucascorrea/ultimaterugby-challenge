@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  Ultimaterugby
 //
 //  Created by Lucas Correa on 30/09/2017.
@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerTableViewController.h"
+#import "HomeViewModel.h"
 
-@interface ViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 
 @end

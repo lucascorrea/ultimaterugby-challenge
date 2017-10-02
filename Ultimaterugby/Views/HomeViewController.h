@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PlayerTableViewController.h"
 #import "HomeViewModel.h"
+#import "ManagerTime.h"
+#import "Constants.h"
 
 @interface HomeViewController : UIViewController
 

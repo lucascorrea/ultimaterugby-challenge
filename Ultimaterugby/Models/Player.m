@@ -17,13 +17,14 @@
     self = [super init];
     if (self) {
         self.name = name;
+        self.periodToYellowCard = kPlayerMinutes;
     }
     return self;
 }
 
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@", self.name];
+    return [NSString stringWithFormat:@"%@ - %i", self.name, self.periodToYellowCard];
 }
 
 @end

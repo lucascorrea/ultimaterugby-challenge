@@ -11,6 +11,7 @@
 		A000DC8C1F80FB47003FFC82 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC8B1F80FB47003FFC82 /* Player.m */; };
 		A000DC8F1F810EBD003FFC82 /* YellowCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC8E1F810EBD003FFC82 /* YellowCardCell.m */; };
 		A000DC941F810F42003FFC82 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC931F810F42003FFC82 /* HomeViewModel.m */; };
+		A000DC9B1F816635003FFC82 /* ManagerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC9A1F816635003FFC82 /* ManagerTime.m */; };
 		A020E7B11F7FEC0A0012A86F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7B01F7FEC0A0012A86F /* main.m */; };
 		A020E7BB1F7FEC0A0012A86F /* UltimaterugbyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */; };
 		A020E7D61F7FEC740012A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */; };
@@ -42,6 +43,9 @@
 		A000DC921F810F42003FFC82 /* HomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
 		A000DC931F810F42003FFC82 /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
 		A000DC951F811023003FFC82 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A000DC981F815D30003FFC82 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A000DC991F816635003FFC82 /* ManagerTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerTime.h; sourceTree = "<group>"; };
+		A000DC9A1F816635003FFC82 /* ManagerTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerTime.m; sourceTree = "<group>"; };
 		A020E79E1F7FEC0A0012A86F /* Ultimaterugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultimaterugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A020E7AF1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A020E7B01F7FEC0A0012A86F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +101,13 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		A000DC9C1F829D8E003FFC82 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		A020E7951F7FEC0A0012A86F = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +131,7 @@
 			children = (
 				A020E7C51F7FEC720012A86F /* Storyboards */,
 				A020E7D11F7FEC730012A86F /* Main */,
+				A000DC9C1F829D8E003FFC82 /* Categories */,
 				A020E7CD1F7FEC730012A86F /* Helpers */,
 				A020E7D41F7FEC740012A86F /* Services */,
 				A020E7CA1F7FEC720012A86F /* Views */,
@@ -162,6 +174,9 @@
 		A020E7CD1F7FEC730012A86F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				A000DC981F815D30003FFC82 /* Constants.h */,
+				A000DC991F816635003FFC82 /* ManagerTime.h */,
+				A000DC9A1F816635003FFC82 /* ManagerTime.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +344,7 @@
 				A000DC8F1F810EBD003FFC82 /* YellowCardCell.m in Sources */,
 				A000DC8C1F80FB47003FFC82 /* Player.m in Sources */,
 				A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */,
+				A000DC9B1F816635003FFC82 /* ManagerTime.m in Sources */,
 				A000DC941F810F42003FFC82 /* HomeViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

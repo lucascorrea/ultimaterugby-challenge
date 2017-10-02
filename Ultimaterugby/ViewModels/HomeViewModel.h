@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
+#import "Constants.h"
+
+typedef void (^ReturnValueBlock) (NSString *returnValue);
 
 @interface HomeViewModel : NSObject
 
@@ -20,5 +23,8 @@
 #pragma mark - Methods
 
 - (void)addYellowCardToPlayer:(Player *)player;
+- (void)startTimerAndUpdateChronometer:(ReturnValueBlock)block;
+- (void)pauseTimer;
+- (void)resetTimer;
 
 @end

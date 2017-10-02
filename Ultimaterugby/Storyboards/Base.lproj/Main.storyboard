@@ -203,7 +203,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-Tk-9VV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-Tk-9VV">
                                                     <rect key="frame" x="111" y="15" width="252" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="60" id="YDD-uj-ptb"/>
@@ -252,7 +252,9 @@
                                     <constraint firstAttribute="height" constant="51" id="CKx-s7-dR0"/>
                                     <constraint firstAttribute="width" constant="52" id="R3N-r5-Q8c"/>
                                 </constraints>
-                                <state key="normal" image="PlayButton"/>
+                                <state key="normal" image="PlayButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <state key="selected" image="PauseButton"/>
                                 <connections>
                                     <action selector="startOrPauseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxR-Mr-1n1"/>
@@ -261,7 +263,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ0-RR-Xuf">
                                 <rect key="frame" x="0.0" y="619" width="375" height="49"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MzG-FW-FQ5">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MzG-FW-FQ5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccI-00-1uT">

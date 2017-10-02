@@ -39,12 +39,12 @@
 #pragma mark - Methods
 
 - (void)selectedPlayer {
-    if ([self.delegate respondsToSelector:@selector(playerDidSelectedPlayer:)]) {
-        Player *player = self.playerViewModel.playersArray[self.selectedIndexPath.row];
-        [self.delegate playerDidSelectedPlayer:player];
-    }
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        if ([self.delegate respondsToSelector:@selector(playerDidSelectedPlayer:)]) {
+            Player *player = self.playerViewModel.playersArray[self.selectedIndexPath.row];
+            [self.delegate playerDidSelectedPlayer:player];
+        }
+    }];
 }
 
 #pragma mark -

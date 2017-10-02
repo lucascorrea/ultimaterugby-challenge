@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Constants.h"
 
 @interface Player : NSObject
 
@@ -14,6 +15,8 @@
 #pragma mark - Property Variables
 
 @property (strong, nonatomic) NSString *name;
+@property (nonatomic) int periodToYellowCard;
+@property (strong, nonatomic) NSTimer *playerTimer;
 
 #pragma mark -
 #pragma mark - Methods

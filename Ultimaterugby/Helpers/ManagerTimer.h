@@ -11,8 +11,14 @@
 
 @interface ManagerTimer : NSObject
 
+#pragma mark -
+#pragma mark - Property Variables
+
 @property (strong, nonatomic) NSMutableArray *timerArray;
 @property (strong, nonatomic) NSMutableArray *playerArray;
+
+#pragma mark -
+#pragma mark - Methods
 
 - (void)startTimerToPlayer:(Player *)player;
 - (void)startAllTimers;

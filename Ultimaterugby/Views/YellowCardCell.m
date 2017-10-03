@@ -25,6 +25,9 @@
     // Configure the view for the selected state
 }
 
+#pragma mark -
+#pragma mark - Methods public
+
 - (void)configureCellWithPlayer:(Player *)player {
     self.player = player;
     self.playerLabel.text = player.name;
@@ -45,6 +48,9 @@
         [self updateTimer];
     }
 }
+
+#pragma mark -
+#pragma mark - Private
 
 - (void)updateTimer {
 

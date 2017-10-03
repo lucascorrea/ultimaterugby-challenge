@@ -14,6 +14,9 @@
 
 @interface HomeViewController : UIViewController
 
+#pragma mark -
+#pragma mark - Property Variables
+
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UISlider *mainTimerSlider;
 @property (weak, nonatomic) IBOutlet UILabel *chronometerLabel;
@@ -26,9 +29,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *conversionButton;
 @property (weak, nonatomic) IBOutlet UIButton *htButton;
 
+#pragma mark -
+#pragma mark - Methods
+
 - (void)startGame:(BOOL)enabled;
 - (void)start;
 - (void)pause;
+
+#pragma mark -
+#pragma mark - Actions
 
 - (IBAction)startOrPauseAction:(UIButton *)sender;
 - (IBAction)htAction:(id)sender;

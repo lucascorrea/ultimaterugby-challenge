@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PlayerViewModel.h"
 
+#pragma mark -
+#pragma mark - Protocol methods
+
 @protocol PlayerDelegate <NSObject>
 
 - (void)playerDidSelectedPlayer:(Player *)player;
@@ -17,7 +20,13 @@
 
 @interface PlayerTableViewController : UITableViewController
 
+#pragma mark -
+#pragma mark - Property Variables
+
 @property (strong, nonatomic) id<PlayerDelegate> delegate;
+
+#pragma mark -
+#pragma mark - Methods
 
 - (void)selectedPlayer;
 

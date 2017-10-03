@@ -96,7 +96,7 @@
     
     [self.managerTimer startAllTimers];
     
-    //Start and Update minutes to chronometer
+    //Start and Update minutes of chronometer
     [self.homeViewModel startTimerAndUpdateChronometer:^(NSString *time) {
         self.chronometerLabel.text = time;
     }];

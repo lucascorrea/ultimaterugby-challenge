@@ -16,8 +16,10 @@
 
 @implementation ManagerTimer
 
-- (instancetype)init
-{
+#pragma mark -
+#pragma mark - Override Init
+
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.timerArray = [[NSMutableArray alloc] init];
@@ -26,6 +28,8 @@
     return self;
 }
 
+#pragma mark -
+#pragma mark - Methods
 
 - (void)startTimerToPlayer:(Player *)player {
     [self.playerArray addObject:player];

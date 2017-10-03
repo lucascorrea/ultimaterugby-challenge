@@ -1,6 +1,6 @@
-# Teamwork Challenge
+# Ultimate Rugby Challenge
 
-This is the project to the Teamwork challenge described below.
+This is the project to the Ultimate Rugby challenge described below.
 
 ## Running:
 

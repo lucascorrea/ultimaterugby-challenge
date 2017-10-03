@@ -1,24 +1,20 @@
 //
-//  ManagerTime.m
+//  ManagerTimer.m
 //  Ultimaterugby
 //
 //  Created by Lucas Correa on 01/10/2017.
 //  Copyright © 2017 SiriusCode. All rights reserved.
 //
 
-#import "ManagerTime.h"
+#import "ManagerTimer.h"
 #import <objc/runtime.h>
 
-@interface ManagerTime()
-
-@property (strong, nonatomic) ReturnValueBlock returnValueBlock;
-@property (strong, nonatomic) NSMutableArray *timerArray;
-@property (strong, nonatomic) NSMutableArray *playerArray;
+@interface ManagerTimer()
 
 @end
 
 
-@implementation ManagerTime
+@implementation ManagerTimer
 
 - (instancetype)init
 {
@@ -60,6 +56,7 @@
     for (NSTimer *timer in self.timerArray) {
         [timer invalidate];
     }
+    [self.timerArray removeAllObjects];
 }
 
 - (void)resetTimer {
@@ -79,16 +76,12 @@
     
     if (player.periodToYellowCard == 0) {
         if (timer) {
-            [player.playerTimer invalidate];
+            [timer invalidate];
             timer = nil;
         }
     }
     
     player.periodToYellowCard--;
-}
-
-- (void)updateChronometer:(ReturnValueBlock)block {
-    self.returnValueBlock = block;
 }
 
 @end

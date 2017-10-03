@@ -18,6 +18,7 @@ typedef void (^ReturnValueBlock) (NSString *returnValue);
 #pragma mark - Property Variables
 
 @property (strong, nonatomic) NSMutableArray *yellowCardsArray;
+@property (strong, nonatomic) NSTimer *mainGameTimer;
 
 #pragma mark -
 #pragma mark - Methods

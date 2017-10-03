@@ -1,5 +1,5 @@
 //
-//  ManagerTime.h
+//  ManagerTimer.h
 //  Ultimaterugby
 //
 //  Created by Lucas Correa on 01/10/2017.
@@ -9,13 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "Player.h"
 
-typedef void (^ReturnValueBlock) (NSString *returnValue);
+@interface ManagerTimer : NSObject
 
-@interface ManagerTime : NSObject
+@property (strong, nonatomic) NSMutableArray *timerArray;
+@property (strong, nonatomic) NSMutableArray *playerArray;
 
 - (void)startTimerToPlayer:(Player *)player;
 - (void)startAllTimers;
 - (void)pauseAllTimers;
 - (void)resetTimer;
+- (void)updateTimer:(NSTimer *)timer;
 
 @end

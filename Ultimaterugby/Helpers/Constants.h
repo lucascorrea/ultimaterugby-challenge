@@ -9,8 +9,8 @@
 #ifndef Constants_h
 #define Constants_h
 
-static int kMainMinutes = 110;
-static int kPlayerMinutes = 210;
-
+//value in seconds
+static int kMainMinutes = 2400;
+static int kPlayerMinutes = 600;
 
 #endif

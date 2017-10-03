@@ -19,4 +19,6 @@
 
 @property (strong, nonatomic) id<PlayerDelegate> delegate;
 
+- (void)selectedPlayer;
+
 @end

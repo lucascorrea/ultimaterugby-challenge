@@ -10,7 +10,7 @@
 
 @interface HomeViewModel()
 
-@property (strong, nonatomic) NSTimer *mainGameTimer;
+
 @property (nonatomic) int minutes;
 @property (strong, nonatomic) ReturnValueBlock returnValueBlock;
 
@@ -55,6 +55,7 @@
 
 - (void)pauseTimer {
     [self.mainGameTimer invalidate];
+    self.mainGameTimer = nil;
 }
 
 - (void)resetTimer {

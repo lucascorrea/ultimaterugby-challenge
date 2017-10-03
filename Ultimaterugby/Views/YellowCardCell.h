@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "Player.h"
-#import "ManagerTime.h"
+#import "ManagerTimer.h"
 
 @interface YellowCardCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *playerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (strong, nonatomic) Player *player;
-@property (strong, nonatomic) ManagerTime *managerTime;
+@property (strong, nonatomic) ManagerTimer *managerTime;
 
 - (void)configureCellWithPlayer:(Player *)player;
 

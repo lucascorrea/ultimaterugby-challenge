@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B3376B56C129A7B0E9944F /* libPods-UltimaterugbyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C84BD533DEA4BCC09523512F /* libPods-UltimaterugbyTests.a */; };
+		79725973B375463D8C14A4B4 /* libPods-Ultimaterugby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D6FF682E32D73AA103573 /* libPods-Ultimaterugby.a */; };
 		A000DC891F80FB39003FFC82 /* PlayerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC881F80FB39003FFC82 /* PlayerViewModel.m */; };
 		A000DC8C1F80FB47003FFC82 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC8B1F80FB47003FFC82 /* Player.m */; };
 		A000DC8F1F810EBD003FFC82 /* YellowCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC8E1F810EBD003FFC82 /* YellowCardCell.m */; };
 		A000DC941F810F42003FFC82 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC931F810F42003FFC82 /* HomeViewModel.m */; };
-		A000DC9B1F816635003FFC82 /* ManagerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC9A1F816635003FFC82 /* ManagerTime.m */; };
+		A000DC9B1F816635003FFC82 /* ManagerTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A000DC9A1F816635003FFC82 /* ManagerTimer.m */; };
 		A020E7B11F7FEC0A0012A86F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7B01F7FEC0A0012A86F /* main.m */; };
-		A020E7BB1F7FEC0A0012A86F /* UltimaterugbyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */; };
 		A020E7D61F7FEC740012A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C61F7FEC720012A86F /* LaunchScreen.storyboard */; };
 		A020E7D71F7FEC740012A86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A020E7C81F7FEC720012A86F /* Main.storyboard */; };
 		A020E7D81F7FEC740012A86F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7CB1F7FEC720012A86F /* HomeViewController.m */; };
 		A020E7D91F7FEC740012A86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A020E7D01F7FEC730012A86F /* Assets.xcassets */; };
 		A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A020E7D31F7FEC730012A86F /* AppDelegate.m */; };
 		A03287941F80F9690061FEF4 /* PlayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03287931F80F9690061FEF4 /* PlayerTableViewController.m */; };
+		A0DE069F1F82E92F00929DAB /* PlayerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE069E1F82E92F00929DAB /* PlayerSpec.m */; };
+		A0DE06A11F82EB4600929DAB /* PlayerViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06A01F82EB4600929DAB /* PlayerViewModelSpec.m */; };
+		A0DE06A31F82EDC500929DAB /* ManagerTimerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06A21F82EDC500929DAB /* ManagerTimerSpec.m */; };
+		A0DE06A51F82FA3F00929DAB /* HomeViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06A41F82FA3F00929DAB /* HomeViewModelSpec.m */; };
+		A0DE06A71F82FE1E00929DAB /* PlayerTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06A61F82FE1E00929DAB /* PlayerTableViewControllerSpec.m */; };
+		A0DE06A91F82FF1600929DAB /* HomeViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06A81F82FF1600929DAB /* HomeViewControllerSpec.m */; };
+		A0DE06AB1F8300F300929DAB /* YellowCardCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE06AA1F8300F300929DAB /* YellowCardCellSpec.m */; };
 		A0FBE4651F800D170036FE01 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0FBE4641F800D160036FE01 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30F2903AFF1F0DAD87D40D57 /* Pods-Ultimaterugby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimaterugby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ultimaterugby/Pods-Ultimaterugby.release.xcconfig"; sourceTree = "<group>"; };
+		358D6FF682E32D73AA103573 /* libPods-Ultimaterugby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ultimaterugby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A000DC871F80FB39003FFC82 /* PlayerViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewModel.h; sourceTree = "<group>"; };
 		A000DC881F80FB39003FFC82 /* PlayerViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewModel.m; sourceTree = "<group>"; };
 		A000DC8A1F80FB47003FFC82 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
@@ -44,13 +54,12 @@
 		A000DC931F810F42003FFC82 /* HomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
 		A000DC951F811023003FFC82 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A000DC981F815D30003FFC82 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		A000DC991F816635003FFC82 /* ManagerTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerTime.h; sourceTree = "<group>"; };
-		A000DC9A1F816635003FFC82 /* ManagerTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerTime.m; sourceTree = "<group>"; };
+		A000DC991F816635003FFC82 /* ManagerTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerTimer.h; sourceTree = "<group>"; };
+		A000DC9A1F816635003FFC82 /* ManagerTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerTimer.m; sourceTree = "<group>"; };
 		A020E79E1F7FEC0A0012A86F /* Ultimaterugby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultimaterugby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A020E7AF1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A020E7B01F7FEC0A0012A86F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A020E7B61F7FEC0A0012A86F /* UltimaterugbyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimaterugbyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UltimaterugbyTests.m; sourceTree = "<group>"; };
 		A020E7BC1F7FEC0A0012A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A020E7C71F7FEC720012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A020E7C91F7FEC720012A86F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,7 +69,18 @@
 		A020E7D31F7FEC730012A86F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A03287921F80F9690061FEF4 /* PlayerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerTableViewController.h; sourceTree = "<group>"; };
 		A03287931F80F9690061FEF4 /* PlayerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerTableViewController.m; sourceTree = "<group>"; };
+		A0DE069E1F82E92F00929DAB /* PlayerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerSpec.m; sourceTree = "<group>"; };
+		A0DE06A01F82EB4600929DAB /* PlayerViewModelSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewModelSpec.m; sourceTree = "<group>"; };
+		A0DE06A21F82EDC500929DAB /* ManagerTimerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerTimerSpec.m; sourceTree = "<group>"; };
+		A0DE06A41F82FA3F00929DAB /* HomeViewModelSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewModelSpec.m; sourceTree = "<group>"; };
+		A0DE06A61F82FE1E00929DAB /* PlayerTableViewControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerTableViewControllerSpec.m; sourceTree = "<group>"; };
+		A0DE06A81F82FF1600929DAB /* HomeViewControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerSpec.m; sourceTree = "<group>"; };
+		A0DE06AA1F8300F300929DAB /* YellowCardCellSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowCardCellSpec.m; sourceTree = "<group>"; };
 		A0FBE4641F800D160036FE01 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		C681B3DDA7ED41B28A5F5A73 /* Pods-UltimaterugbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UltimaterugbyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UltimaterugbyTests/Pods-UltimaterugbyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C84BD533DEA4BCC09523512F /* libPods-UltimaterugbyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UltimaterugbyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E66E14D63A729DDF8551FA /* Pods-UltimaterugbyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UltimaterugbyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UltimaterugbyTests/Pods-UltimaterugbyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E81D3617527F52C78E015A4E /* Pods-Ultimaterugby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimaterugby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ultimaterugby/Pods-Ultimaterugby.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79725973B375463D8C14A4B4 /* libPods-Ultimaterugby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +96,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B3376B56C129A7B0E9944F /* libPods-UltimaterugbyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62D850133E5AA81EBB17F411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E81D3617527F52C78E015A4E /* Pods-Ultimaterugby.debug.xcconfig */,
+				30F2903AFF1F0DAD87D40D57 /* Pods-Ultimaterugby.release.xcconfig */,
+				C681B3DDA7ED41B28A5F5A73 /* Pods-UltimaterugbyTests.debug.xcconfig */,
+				E3E66E14D63A729DDF8551FA /* Pods-UltimaterugbyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A000DC901F810EC6003FFC82 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +147,8 @@
 				A020E7A01F7FEC0A0012A86F /* Ultimaterugby */,
 				A020E7B91F7FEC0A0012A86F /* UltimaterugbyTests */,
 				A020E79F1F7FEC0A0012A86F /* Products */,
+				62D850133E5AA81EBB17F411 /* Pods */,
+				E43181A18B54BF6D72A1EE08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,8 +182,14 @@
 		A020E7B91F7FEC0A0012A86F /* UltimaterugbyTests */ = {
 			isa = PBXGroup;
 			children = (
-				A020E7BA1F7FEC0A0012A86F /* UltimaterugbyTests.m */,
 				A020E7BC1F7FEC0A0012A86F /* Info.plist */,
+				A0DE069E1F82E92F00929DAB /* PlayerSpec.m */,
+				A0DE06A01F82EB4600929DAB /* PlayerViewModelSpec.m */,
+				A0DE06A21F82EDC500929DAB /* ManagerTimerSpec.m */,
+				A0DE06A61F82FE1E00929DAB /* PlayerTableViewControllerSpec.m */,
+				A0DE06A41F82FA3F00929DAB /* HomeViewModelSpec.m */,
+				A0DE06AA1F8300F300929DAB /* YellowCardCellSpec.m */,
+				A0DE06A81F82FF1600929DAB /* HomeViewControllerSpec.m */,
 			);
 			path = UltimaterugbyTests;
 			sourceTree = "<group>";
@@ -175,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				A000DC981F815D30003FFC82 /* Constants.h */,
-				A000DC991F816635003FFC82 /* ManagerTime.h */,
-				A000DC9A1F816635003FFC82 /* ManagerTime.m */,
+				A000DC991F816635003FFC82 /* ManagerTimer.h */,
+				A000DC9A1F816635003FFC82 /* ManagerTimer.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -234,6 +275,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E43181A18B54BF6D72A1EE08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358D6FF682E32D73AA103573 /* libPods-Ultimaterugby.a */,
+				C84BD533DEA4BCC09523512F /* libPods-UltimaterugbyTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A020E7BF1F7FEC0A0012A86F /* Build configuration list for PBXNativeTarget "Ultimaterugby" */;
 			buildPhases = (
+				0FE5DC74D3A8D566EB2EF788 /* [CP] Check Pods Manifest.lock */,
 				A020E79A1F7FEC0A0012A86F /* Sources */,
 				A020E79B1F7FEC0A0012A86F /* Frameworks */,
 				A020E79C1F7FEC0A0012A86F /* Resources */,
+				95B54089BC6BA6DEEADB388F /* [CP] Embed Pods Frameworks */,
+				EC73CF00B98D2CBF5B3E6EFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,9 +311,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A020E7C21F7FEC0A0012A86F /* Build configuration list for PBXNativeTarget "UltimaterugbyTests" */;
 			buildPhases = (
+				258E50486618328E04AA084D /* [CP] Check Pods Manifest.lock */,
 				A020E7B21F7FEC0A0012A86F /* Sources */,
 				A020E7B31F7FEC0A0012A86F /* Frameworks */,
 				A020E7B41F7FEC0A0012A86F /* Resources */,
+				B5004BDDDCC7688BD9831D52 /* [CP] Embed Pods Frameworks */,
+				B9FD144A71ACAC2A06599F43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,6 +388,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FE5DC74D3A8D566EB2EF788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ultimaterugby-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		258E50486618328E04AA084D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UltimaterugbyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B54089BC6BA6DEEADB388F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ultimaterugby/Pods-Ultimaterugby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5004BDDDCC7688BD9831D52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UltimaterugbyTests/Pods-UltimaterugbyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9FD144A71ACAC2A06599F43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UltimaterugbyTests/Pods-UltimaterugbyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC73CF00B98D2CBF5B3E6EFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ultimaterugby/Pods-Ultimaterugby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A020E79A1F7FEC0A0012A86F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,7 +499,7 @@
 				A000DC8F1F810EBD003FFC82 /* YellowCardCell.m in Sources */,
 				A000DC8C1F80FB47003FFC82 /* Player.m in Sources */,
 				A020E7DA1F7FEC740012A86F /* AppDelegate.m in Sources */,
-				A000DC9B1F816635003FFC82 /* ManagerTime.m in Sources */,
+				A000DC9B1F816635003FFC82 /* ManagerTimer.m in Sources */,
 				A000DC941F810F42003FFC82 /* HomeViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +508,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A020E7BB1F7FEC0A0012A86F /* UltimaterugbyTests.m in Sources */,
+				A0DE06A31F82EDC500929DAB /* ManagerTimerSpec.m in Sources */,
+				A0DE06A11F82EB4600929DAB /* PlayerViewModelSpec.m in Sources */,
+				A0DE06A51F82FA3F00929DAB /* HomeViewModelSpec.m in Sources */,
+				A0DE06AB1F8300F300929DAB /* YellowCardCellSpec.m in Sources */,
+				A0DE069F1F82E92F00929DAB /* PlayerSpec.m in Sources */,
+				A0DE06A91F82FF1600929DAB /* HomeViewControllerSpec.m in Sources */,
+				A0DE06A71F82FE1E00929DAB /* PlayerTableViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +654,7 @@
 		};
 		A020E7C01F7FEC0A0012A86F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81D3617527F52C78E015A4E /* Pods-Ultimaterugby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +670,7 @@
 		};
 		A020E7C11F7FEC0A0012A86F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F2903AFF1F0DAD87D40D57 /* Pods-Ultimaterugby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +686,7 @@
 		};
 		A020E7C31F7FEC0A0012A86F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C681B3DDA7ED41B28A5F5A73 /* Pods-UltimaterugbyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +702,7 @@
 		};
 		A020E7C41F7FEC0A0012A86F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E66E14D63A729DDF8551FA /* Pods-UltimaterugbyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

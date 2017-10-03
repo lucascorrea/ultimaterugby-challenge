@@ -12,8 +12,7 @@
 @implementation NSObject (PerformBlockAfterDelay)
 
 - (void)performBlock:(void (^)(void))block
-          afterDelay:(NSTimeInterval)delay
-{
+          afterDelay:(NSTimeInterval)delay {
     block = [block copy];
     [self performSelector:@selector(fireBlockAfterDelay:)
                withObject:block
@@ -28,20 +27,8 @@
 
 @interface HomeViewController () <PlayerDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
-@property (weak, nonatomic) IBOutlet UISlider *mainTimerSlider;
-@property (weak, nonatomic) IBOutlet UILabel *chronometerLabel;
-@property (weak, nonatomic) IBOutlet UIButton *startOrPauseButton;
-@property (weak, nonatomic) IBOutlet UITableView *yellowTableView;
-@property (weak, nonatomic) IBOutlet UIButton *tryButton;
-@property (weak, nonatomic) IBOutlet UIButton *kickButton;
-@property (weak, nonatomic) IBOutlet UIButton *redButton;
-@property (weak, nonatomic) IBOutlet UIButton *yellowButton;
-@property (weak, nonatomic) IBOutlet UIButton *conversionButton;
-@property (weak, nonatomic) IBOutlet UIButton *htButton;
-
 @property (strong, nonatomic) HomeViewModel *homeViewModel;
-@property (strong, nonatomic) ManagerTime *managerTimer;
+@property (strong, nonatomic) ManagerTimer *managerTimer;
 
 @end
 
@@ -53,7 +40,7 @@
     [self.mainTimerSlider setThumbImage:[UIImage imageNamed:@"MainTimerSlider"] forState:UIControlStateNormal];
     
     self.homeViewModel = [[HomeViewModel alloc] init];
-    self.managerTimer = [[ManagerTime alloc] init];
+    self.managerTimer = [[ManagerTimer alloc] init];
 }
 
 

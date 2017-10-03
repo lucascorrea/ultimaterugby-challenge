@@ -16,7 +16,6 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (nonatomic) int periodToYellowCard;
-@property (strong, nonatomic) NSTimer *playerTimer;
 
 #pragma mark -
 #pragma mark - Methods

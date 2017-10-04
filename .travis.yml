@@ -1,9 +1,10 @@
 language: objective-c
+osx_image: xcode9
 xcode_workspace: Ultimaterugby.xcworkspace
 xcode_scheme: UltimaterugbyTests
 before_install:
-    - brew update
-    - brew install xctool
     - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-script: xctool -workspace Ultimaterugby.xcworkspace -scheme Ultimaterugby -sdk iphonesimulator run-tests
+script:
+    - xcodebuild -workspace Ultimaterugby.xcworkspace -list
+    - xcodebuild -workspace Ultimaterugby.xcworkspace -scheme Ultimaterugby -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 5s,OS=11.0' GCC_GENERATE_TEST_COVERAGE_FILES=YES build test

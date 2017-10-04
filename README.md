@@ -1,5 +1,7 @@
 # Ultimate Rugby Challenge
 
+[![Build Status](https://travis-ci.org/lucascorrea/ultimaterugby-challenge.svg?branch=master)](https://travis-ci.org/lucascorrea/ultimaterugby-challenge)
+
 This is the project to the Ultimate Rugby challenge described below.
 
 ## Running:
